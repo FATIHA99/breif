@@ -1,0 +1,75 @@
+header {
+    background-color: #333333;
+    width: 100%;
+    height: 5%;
+}
+
+#logo {
+    width: 4%;
+    height: 3%;
+    margin: 2px;
+}
+
+ul li {
+    float: right;
+}
+
+li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 9px;
+
+}
+
+li:hover {
+    background-color: #862222;
+}
+
+ul {
+
+    background-color: #333333;
+}
+
+.parent {
+    position: relative;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+}
+
+.child1{
+    margin: 2px;
+    border: 2px solid gray;
+    background-color:burlywood;
+    width: 89%;
+    height: 45%;
+}
+.child2{
+     
+    margin: 2px;
+    border: 2px solid gray;
+    background-color:rgb(135, 222, 157);
+    width: 89%;
+}
+a {
+    margin: 8px;
+}
+
+
+p {
+    padding: 20px;
+}
+
+ /* body{
+     background-image:url("https://image.shutterstock.com/image-vector/image-background-material-film-260nw-1918254911.jpg");
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    width: 100%;
+    height: 100%;
+}  */
+#film1{
+    width: 100px;
+    height: 60px;
+}

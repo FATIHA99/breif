@@ -1,0 +1,144 @@
+/* ::::::::::::::::::::::  MOBILE FIRST    ::::::::::::::::::::::::::::::::::*/
+
+body{
+    
+    background-image: linear-gradient(to right,rgb(255, 255, 255),#D66D75);
+}  
+
+ #logo{
+    width:90%;
+    height: 35px; 
+    margin: 7px;
+    position:absolute;
+    top: 0px;
+}
+
+ul{
+  
+    display: flex;
+    background-color: #e91b1b;
+    margin-top: 50px;
+}
+li {  color: black;
+    display: block;
+    text-align: center;
+    padding: 9px;
+ font-size: 13px;
+}
+
+li:hover {
+    background-color: #D66D75;
+    color: white;
+    border-bottom: 2px solid black;
+}
+/* les cartes de chaque film */
+
+.parent {
+    position: relative;
+    border: 1px solid black;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 350px;
+    width: 340px;  
+}
+.child1{
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbsNTsIjDM9caiuREo8VGVaj6FW7SaH0Dvw&usqp=CAU");
+   
+}
+.child2{
+ 
+    background-image: url("https://cps-static.rovicorp.com/2/Open/Disney/Program/37403911/_derived_jpg_q90_310x470_m0/BlackWIdow_2x3_27_1636449866253_3.jpg"); 
+}
+.child3{
+    background-image: url("https://sf2.mariefrance.fr/wp-content/uploads/sites/5/2018/03/films-a-voir-cinema-2-308x410.jpg");
+}
+.child4{
+    background-image: url("https://fr.web.img2.acsta.net/c_224_335_50_50/pictures/21/09/28/16/27/4202972.jpg");
+    
+}
+.child1,.child2,.child3,.child4{
+    border: 2px solid gray;
+    background-color:burlywood;
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.parent:hover{
+    border: 2px double red;
+}
+/* nav */
+.description{
+    margin-left: 2%;
+}
+.navigation{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+a{
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+  
+}
+a:hover{
+    text-decoration:underline;
+  color: red;
+}
+/* les information  de chaque film */
+.t1{
+    font-size: larger;
+    font-weight: bold;
+}
+.t2{
+    color: gray;
+}
+.t3
+{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.t4{
+    color: green;
+}
+/* ::::::::::::::::::::::   tablette   ::::::::::::::::::::::::::::::::::*/
+
+@media screen and (min-width:400px) {
+    article
+    {
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+}
+/* :::::::::::::::::::::      descktop     ::::::::::::::::::::::::::::::::*/
+
+ @media screen and (min-width:1024px) {
+    article
+    {
+    display: flex;
+    }
+    #logo {
+        width: 100px;;
+        height: 40px;
+        margin-top: 40px;
+
+    }
+    ul{
+        background-image: linear-gradient(to right,black,rgb(194, 16, 16));
+        margin-top: 40px;
+        justify-content: center;
+    }
+    li{
+        font-size: 20px;
+    }
+    .parent{
+        width: 250px; 
+        margin: 2%;
+    }
+    
+}
+
+ 

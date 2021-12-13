@@ -12,20 +12,19 @@ body{
     position:absolute;
     top: 0px;
 }
-
+/*pour liste */
 ul{
-  
     display: flex;
     background-color: #e91b1b;
     margin-top: 50px;
 }
-li {  color: black;
+li { 
+    color: black;
     display: block;
     text-align: center;
     padding: 9px;
- font-size: 13px;
+    font-size: 13px;
 }
-
 li:hover {
     background-color: #D66D75;
     color: white;
@@ -34,28 +33,25 @@ li:hover {
 /* les cartes de chaque film */
 
 .parent {
-    position: relative;
+    /* position: relative; */
     border: 1px solid black;
     display: inline-block;
     box-sizing: border-box;
     height: 350px;
     width: 340px;  
 }
+/*les image de chaque carte */
 .child1{
-
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbsNTsIjDM9caiuREo8VGVaj6FW7SaH0Dvw&usqp=CAU");
-   
 }
 .child2{
- 
     background-image: url("https://cps-static.rovicorp.com/2/Open/Disney/Program/37403911/_derived_jpg_q90_310x470_m0/BlackWIdow_2x3_27_1636449866253_3.jpg"); 
 }
 .child3{
     background-image: url("https://sf2.mariefrance.fr/wp-content/uploads/sites/5/2018/03/films-a-voir-cinema-2-308x410.jpg");
 }
 .child4{
-    background-image: url("https://fr.web.img2.acsta.net/c_224_335_50_50/pictures/21/09/28/16/27/4202972.jpg");
-    
+    background-image: url("https://fr.web.img2.acsta.net/c_224_335_50_50/pictures/21/09/28/16/27/4202972.jpg"); 
 }
 .child1,.child2,.child3,.child4{
     border: 2px solid gray;
@@ -64,8 +60,7 @@ li:hover {
     height: 60%;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover; 
 }
 .parent:hover{
     border: 2px double red;
@@ -78,11 +73,11 @@ li:hover {
     margin-top: 2%;
     margin-left: 2%;
 }
+/*les liens*/
 a{
     text-decoration: none;
     margin: 10px;
     font-weight: bold;
-  
 }
 a:hover{
     text-decoration:underline;
@@ -105,18 +100,16 @@ a:hover{
     color: green;
 }
 /* ::::::::::::::::::::::   tablette   ::::::::::::::::::::::::::::::::::*/
-
-@media screen and (min-width:400px) {
+@media screen and (min-width:400px) {    /*   >  400 */
     article
     {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row;  /*  LIGNE */
+    flex-wrap: wrap;    /*  LES ELEMENT ENTRE LE CONTENEUR  ,LA VALEUR PAR DEFAU EST no-wrap */
     }
 }
 /* :::::::::::::::::::::      descktop     ::::::::::::::::::::::::::::::::*/
-
- @media screen and (min-width:1024px) {
-    article
+  @media screen and (min-width:1024px) {     /*   >  1024 */
+    article 
     {
     display: flex;
     }
@@ -124,7 +117,6 @@ a:hover{
         width: 100px;;
         height: 40px;
         margin-top: 40px;
-
     }
     ul{
         background-image: linear-gradient(to right,black,rgb(194, 16, 16));
@@ -137,8 +129,7 @@ a:hover{
     .parent{
         width: 250px; 
         margin: 2%;
-    }
-    
-}
+    } 
+} 
 
  
